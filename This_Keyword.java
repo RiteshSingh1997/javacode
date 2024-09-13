@@ -1,24 +1,25 @@
-package basics;
+package basicsjava;
 
-public class This_Keyword 
-{
-  int length = 60;
-  float width = 64.468f;
-  String Name = "Ritesh Singh";
-  
-  public void UpdateValue(int length, float width, String Name)
-  {
-	  this.length = length;
-	  this.width  = width;
-	  this.Name = Name;
-  }
-  public static void main(String[] args) 
-  {
-	  This_Keyword N1 = new This_Keyword();
-	  N1.UpdateValue(70, 568.80f, "Sonali Singh");
-	  System.out.println(N1.length);
-	  System.out.println(N1.width);
-	  System.out.println(N1.Name);
-  }
-  
+public class This_KeyWord 
+{    static double PI = Math.PI;
+     String Name = "Ritesh Singh";
+     float salary = 40000.00f;
+
+		 void Employee(double PI, String Name, float salary)
+		{
+			System.out.println("Printing Employee Details");
+			this.PI = PI;
+			this.Name = Name;
+			this.salary = salary;
+		}
+          public static void main(String[] args) 
+        {
+        	  This_KeyWord n1 = new This_KeyWord();
+        	  n1.Employee(3.25, "Sonali Singh", 78000.0f);
+        	  System.out.println(PI);
+        	  System.out.println(n1.Name);
+        	  System.out.println(n1.salary);
+        	  
+		}
+
 }

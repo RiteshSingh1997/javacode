@@ -1,29 +1,30 @@
-package basics;
+package basicsjava;
 
 public class Constructors 
 {
-  Constructors(int a, int b, int c)
+   Constructors()              // non parameterized
   {
-	  if(!(a<b && b<c))
-	   System.out.println("Condition Satisfied");
+	  int a = 50;
+	  int b = 60;
+	  System.out.println(a*b);
   }
-  Constructors(String a, String b)
+	Constructors(int a,int b,int c)           // parameterized
   {
-	  if(a==b)
-	  {
-		  System.out.println("Both Have Same Name");
-	  }
-	  else
-	  {
-		  System.out.println("Both Have different Name");
-	  }
-	
+	  if(a!=b && b==c)
+		  System.out.println("First Condition Satisfied");
   }
-  public static void main(String[] args)
+  Constructors(int a, int b)                  // parameterized
   {
-	  //new Constructors(2,3,4);
-	  //new Constructors("Ritesh","Ritesh");
-	  Constructors c1 = new Constructors(2,3,4);
-	  Constructors c2 = new Constructors("Ritesh","Rohit");
+	  if(a<b)
+	  {
+		  System.out.println("Second Condition Satisfied");
+	  }
+  }
+	 
+  public static void main(String[] args) 
+  {
+	Constructors C1= new Constructors(20,30,30);
+	Constructors C2= new Constructors(20,30);
+	Constructors C3 = new Constructors();
   }
 }

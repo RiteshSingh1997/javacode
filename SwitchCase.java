@@ -1,38 +1,30 @@
-package basics;
+package basicsjava;
 
 import java.util.Scanner;
 
 public class SwitchCase 
-{   public static void main(String[] args) 
-
+{
+  public static void main(String[] args) 
   {
-	System.out.println("Press 1 for Chrome");
-	System.out.println("Press 2 for firefox");
-	System.out.println("Press 3 for Edge");
-	System.out.println("Press 4 for Safari");
-	System.out.println("Press 5 for IE");
-	Scanner s1=new Scanner(System.in);
-		int a=	s1.nextInt();//human input at run time
-	switch(a)
+	  System.out.println("Press 1 for Google Chrome");
+	  System.out.println("Press 2 for Firefox");
+	  System.out.println("Press 3 for Edge");
+		Scanner sc = new Scanner(System.in);
+		int b = sc.nextInt();	
+	switch(b)
 	{
 	case 1:
 		System.out.println("Launch Chrome Browser");
 		break;
 	case 2:
-		System.out.println("Launch firefox  Browser");
-		break;
+		System.out.println("Launch Firefox Browser");
+        break;
 	case 3:
 		System.out.println("Launch Edge Browser");
 		break;
-	case 4:
-		System.out.println("Launch Safari Browser");
-		break;
-	case 5:
-		System.out.println("Launch IE Browser");
-		break;
 	default:
-		System.out.println("Sorry your selection is wrong,please check again");
-		s1.close();
+			 System.out.println("Sorry your selection is wrong");
+			 sc.close();
 	}
-  }	
+ }
 }

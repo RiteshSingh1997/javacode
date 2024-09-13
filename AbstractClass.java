@@ -1,47 +1,36 @@
-package basics;
+package basicsjava;
 
-abstract class Facebook_API
+class First1
 {
-	abstract void fb_login();
-	abstract void fb_registration();
+	
+	static void Parent()
+	{
+		int a = 78;
+		float b = 43.324f;
+		double c = 3432.322;
+		if(a>b && c>b)
+		{
+			System.out.println("Condition satisfied");
+		}
+		else
+		{
+			System.out.println("Not satisfied");
+		}
+		
+	}	
 }
 
-abstract class Google_API extends Facebook_API
-{
-	abstract void google_login();
-	abstract void google_registration();
-}
-public class AbstractClass extends Google_API
-{
-
-	void google_login() 
+abstract public class AbstractClass extends First1        // relation between abstract class and class
+{     
+	static void Teachers()                               // concrete method
 	{
-		
-		System.out.println("Press 1 for google account login");
+		System.out.println("Teachers will start class from September 1");
 	}
 
-	void google_registration() 
+	public static void main(String[] args) 
 	{
-		
-		
-	}
-	void fb_login() 
-	{
-		System.out.println("Press 2 for fb account login");
-		
+	  Parent();
+	  Teachers();
 	}
 
-	void fb_registration() 
-	{
-		
-		
-	}
-      public static void main(String[] args) 
-      {
-    	  AbstractClass n1 = new AbstractClass();	 
-          n1.fb_login();
-          n1.fb_registration();
-          n1.google_login();
-          n1.google_registration();
-      }
 }

@@ -1,33 +1,36 @@
-package basics;
+package basicsjava;
 
 public class NestedIfElse 
 {
 
-public static void main(String[] args) 
-{
-	 int a = 21;
-	 char gender = 'M';
-	 char gender1='F';
-	 if(gender=='M')
-	 {
-	  if(a<=20)
+	public static void main(String[] args) 
+	{
+      int a = 30;
+      int b = 40;
+      int c = 20;
+      if(a<b) // true
+      {
+    	  if(b<c) //false
+    	  {
+    		  System.out.println(1);
+    	  }
+    	  else
+    	  {
+    		  if(a==b) // false
+    		  {
+    			  System.out.println(2);
+    		  }
+    		  else
+    		  {
+    			  System.out.println(3);
+    		  }
+    	  }
+      }
+      else
 	  {
-		 System.out.println("Half Ticket");
+		  System.out.println(4);
 	  }
-	  else if(a<=21 && a<=60)
-	  {
-		 System.out.println("Full Ticket"); 
-	  }
-	  else if(a>61 && a<=100)
-	  {
-		 System.out.println("Half Ticket");
-	  }
-	 
-	 else
-	  {
-		 System.out.println("Free for Female");
-	  }
-	 }
-	
-}
+
+	}
+
 }
