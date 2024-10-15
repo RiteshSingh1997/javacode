@@ -8,7 +8,7 @@ public class String_Date_Class
 	{
 		Date d1 = new Date();
 		System.out.println(d1.getTime());
-		//Epoch Coverter
+		//Epoch Converter
 		Date d2 = new Date(d1.getTime() - (1000*60*60*24*3));           //To covert the time in human understandable language
 		System.out.println(d2);
 		String current_time = d2.toString();
